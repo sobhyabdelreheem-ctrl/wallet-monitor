@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wallet Monitor</title>
+  <script src="https://sdk.minepi.com/pi-sdk.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+      background: #f4f4f4;
+    }
+    main {
+      background: white;
+      padding: 24px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h6>Wallet Monitor </h6>
+    <p>Pi Testnet SDK Connection Test</p>
+    <p id="status">Checking SDK...</p>
+  </main>
 
+  <script>
+    const status = document.getElementById("status");
+
+    try {
+      if (window.Pi) {
+        Pi.init({ version: "2.0", sandbox: true });
+        status.textContent = "Pi SDK detected. Initialization requested.";
+      } else {
+        status.textContent = "Pi SDK not detected yet.";
+      }
+    } catch (error) {
+      status.textContent = "SDK initialization error.";
+    }
+  </script>
+</body>
+</html>
