@@ -22,7 +22,7 @@
 </head>
 <body>
   <main>
-    <h2>Wallet Monitor</h2>
+    <h2>Wallet Monitor asd</h2>
     <p>Pi Testnet SDK Connection Test</p>
     <p id="status">Checking SDK...</p>
   </main>
