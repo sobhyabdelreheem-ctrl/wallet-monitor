@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wallet Monitor</title>
+  <title>Wallet Monitor tittle</title>
   <script src="https://sdk.minepi.com/pi-sdk.js"></script>
   <style>
     body {
