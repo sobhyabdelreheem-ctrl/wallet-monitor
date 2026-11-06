@@ -39,6 +39,6 @@
     } catch (error) {
       status.textContent = "SDK initialization error.";
     }
-  </script>
+    </script>
 </body>
 </html>
